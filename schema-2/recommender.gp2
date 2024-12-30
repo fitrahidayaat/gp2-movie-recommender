@@ -1,0 +1,67 @@
+Main = rec!; removeBlueMark!; removeRedMark!; clear!
+
+rec(a,b,c,d:string; e,f,g:int)
+[
+    (n1, a)
+    (n2, b # green)
+    (n3, c)
+    (n4, d)
+    |
+    (e1, n1, n3, e)
+    (e2, n1, n4, f)
+    (e3, n2, n3, g)
+]
+=>
+[
+    (n1, a)
+    (n2, b # green)
+    (n3, c)
+    (n4, d # blue)
+    |
+    (e1, n1, n3, e)
+    (e2, n1, n4, f)
+    (e3, n2, n3, g)
+    (e4, n2, n4, b.d)
+]
+interface = {n1, n2, n3, n4}
+where e >= 80 and f >= 80 and g >= 80 and not edge(n2, n4)
+
+removeBlueMark(a: list)
+[
+    (n1, a # blue)
+    |
+]
+=>
+[
+    (n1, a)
+    |
+]
+interface = {n1}
+
+
+removeRedMark(a: list)
+[
+    (n1, a # green)
+    |
+]
+=>
+[
+    (n1, a)
+    |
+]
+interface = {n1}
+
+clear(a, b: list; c:int)
+[
+    (n1, a)
+    (n2, b)
+    |
+    (e1, n1, n2, c)
+]
+=>
+[
+    (n1, a)
+    (n2, b)
+    |
+]
+interface = {n1, n2}

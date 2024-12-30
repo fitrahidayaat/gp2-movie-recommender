@@ -1,0 +1,380 @@
+recommender 50 user
+
+real	0m3.263s
+user	0m2.909s
+sys	0m0.187s
+
+recommender_rooted 50 user
+
+real	0m2.789s
+user	0m2.275s
+sys	0m0.258s
+
+
+True Positives (TP): 2
+False Positives (FP): 1
+False Negatives (FN): 1
+True Negatives (TN): 3
+Accuracy: 0.7143
+==================================================
+recommender 100 user
+
+real	0m5.663s
+user	0m5.071s
+sys	0m0.261s
+
+recommender_rooted 100 user
+
+real	0m3.844s
+user	0m2.931s
+sys	0m0.269s
+
+
+True Positives (TP): 2
+False Positives (FP): 2
+False Negatives (FN): 1
+True Negatives (TN): 2
+Accuracy: 0.5714
+==================================================
+recommender 150 user
+
+real	0m6.796s
+user	0m6.428s
+sys	0m0.162s
+
+recommender_rooted 150 user
+
+real	0m3.741s
+user	0m3.107s
+sys	0m0.320s
+
+
+True Positives (TP): 2
+False Positives (FP): 2
+False Negatives (FN): 1
+True Negatives (TN): 2
+Accuracy: 0.5714
+==================================================
+recommender 200 user
+
+real	0m13.009s
+user	0m12.142s
+sys	0m0.298s
+
+recommender_rooted 200 user
+
+real	0m4.315s
+user	0m3.542s
+sys	0m0.265s
+
+
+True Positives (TP): 2
+False Positives (FP): 2
+False Negatives (FN): 1
+True Negatives (TN): 2
+Accuracy: 0.5714
+==================================================
+recommender 250 user
+
+real	0m25.108s
+user	0m24.646s
+sys	0m0.212s
+
+recommender_rooted 250 user
+
+real	0m4.242s
+user	0m3.810s
+sys	0m0.246s
+
+
+True Positives (TP): 2
+False Positives (FP): 2
+False Negatives (FN): 1
+True Negatives (TN): 2
+Accuracy: 0.5714
+==================================================
+recommender 300 user
+
+real	0m24.903s
+user	0m24.431s
+sys	0m0.176s
+
+recommender_rooted 300 user
+
+real	0m5.131s
+user	0m4.457s
+sys	0m0.221s
+
+
+True Positives (TP): 2
+False Positives (FP): 2
+False Negatives (FN): 1
+True Negatives (TN): 2
+Accuracy: 0.5714
+==================================================
+recommender 350 user
+
+real	0m26.702s
+user	0m26.319s
+sys	0m0.171s
+
+recommender_rooted 350 user
+
+real	0m6.148s
+user	0m4.961s
+sys	0m0.335s
+
+
+True Positives (TP): 2
+False Positives (FP): 3
+False Negatives (FN): 1
+True Negatives (TN): 1
+Accuracy: 0.4286
+==================================================
+recommender 400 user
+
+real	0m30.904s
+user	0m30.338s
+sys	0m0.268s
+
+recommender_rooted 400 user
+
+real	0m5.983s
+user	0m5.272s
+sys	0m0.293s
+
+
+True Positives (TP): 2
+False Positives (FP): 3
+False Negatives (FN): 1
+True Negatives (TN): 1
+Accuracy: 0.4286
+==================================================
+recommender 450 user
+
+real	0m33.602s
+user	0m33.280s
+sys	0m0.125s
+
+recommender_rooted 450 user
+
+real	0m6.841s
+user	0m6.109s
+sys	0m0.339s
+
+
+True Positives (TP): 2
+False Positives (FP): 3
+False Negatives (FN): 1
+True Negatives (TN): 1
+Accuracy: 0.4286
+==================================================
+recommender 500 user
+
+real	0m37.128s
+user	0m36.785s
+sys	0m0.207s
+
+recommender_rooted 500 user
+
+real	0m6.648s
+user	0m5.637s
+sys	0m0.298s
+
+
+True Positives (TP): 2
+False Positives (FP): 3
+False Negatives (FN): 1
+True Negatives (TN): 1
+Accuracy: 0.4286
+==================================================
+recommender 550 user
+
+real	0m56.482s
+user	0m56.028s
+sys	0m0.237s
+
+recommender_rooted 550 user
+
+real	0m10.356s
+user	0m9.125s
+sys	0m0.489s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 600 user
+
+real	1m7.961s
+user	1m7.262s
+sys	0m0.346s
+
+recommender_rooted 600 user
+
+real	0m9.113s
+user	0m8.239s
+sys	0m0.366s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 650 user
+
+real	1m11.970s
+user	1m11.492s
+sys	0m0.189s
+
+recommender_rooted 650 user
+
+real	0m10.191s
+user	0m9.604s
+sys	0m0.301s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 700 user
+
+real	2m14.551s
+user	2m14.048s
+sys	0m0.217s
+
+recommender_rooted 700 user
+
+real	0m11.154s
+user	0m10.293s
+sys	0m0.259s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 750 user
+
+real	1m31.464s
+user	1m30.616s
+sys	0m0.307s
+
+recommender_rooted 750 user
+
+real	0m11.004s
+user	0m10.385s
+sys	0m0.278s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 800 user
+
+real	1m42.186s
+user	1m41.297s
+sys	0m0.314s
+
+recommender_rooted 800 user
+
+real	0m12.873s
+user	0m11.802s
+sys	0m0.455s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 850 user
+
+real	3m45.582s
+user	3m45.103s
+sys	0m0.209s
+
+recommender_rooted 850 user
+
+real	0m19.661s
+user	0m18.700s
+sys	0m0.349s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 900 user
+
+real	3m24.453s
+user	3m23.956s
+sys	0m0.188s
+
+recommender_rooted 900 user
+
+real	0m15.503s
+user	0m15.207s
+sys	0m0.155s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 950 user
+
+real	3m59.416s
+user	3m59.165s
+sys	0m0.120s
+
+recommender_rooted 950 user
+
+real	0m28.644s
+user	0m28.297s
+sys	0m0.195s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================
+recommender 1000 user
+
+real	4m4.330s
+user	4m3.804s
+sys	0m0.334s
+
+recommender_rooted 1000 user
+
+real	0m16.851s
+user	0m16.542s
+sys	0m0.180s
+
+
+True Positives (TP): 3
+False Positives (FP): 4
+False Negatives (FN): 0
+True Negatives (TN): 0
+Accuracy: 0.4286
+==================================================

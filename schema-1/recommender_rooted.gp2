@@ -1,0 +1,124 @@
+Main = (init; {rec, rec2}!; mark)!; removeNodeMark!; removeEdges!; removeEdgesMark!
+
+init(a, b: string; c: int)
+[
+    (n1, a)
+    (n2, b)
+    |
+    (e1, n1, n2, c)
+]
+=>
+[
+    (n1, a)
+    (n2(R), b)
+    |
+    (e1, n1, n2, c)
+]
+interface = {n1, n2}
+
+rec(a,b,c,d:string; e,f,g:int)
+[
+    (n1, a)
+    (n2, b)
+    (n3(R), c)
+    (n4, d)
+    |
+    (e1, n1, n3, e)
+    (e2, n1, n4, f)
+    (e3, n2, n3, g)
+]
+=>
+[
+    (n1, a)
+    (n2, b)
+    (n3(R), c)
+    (n4, d)
+    |
+    (e1, n1, n3, e)
+    (e2, n1, n4, f)
+    (e3, n2, n3, g)
+    (e4, n2, n4, b.d # blue)
+]
+interface = {n1, n2, n3, n4}
+where e >= 80 and f >= 80 and g >= 80 and not edge(n2, n4)
+
+rec2(a,b,c,d:string; e,f,g:int)
+[
+    (n1, a)
+    (n2, b)
+    (n3(R), c)
+    (n4, d # red)
+    |
+    (e1, n1, n3, e)
+    (e2, n1, n4, f)
+    (e3, n2, n3, g)
+]
+=>
+[
+    (n1, a)
+    (n2, b)
+    (n3(R), c)
+    (n4, d # red)
+    |
+    (e1, n1, n3, e)
+    (e2, n1, n4, f)
+    (e3, n2, n3, g)
+    (e4, n2, n4, b.d # blue)
+]
+interface = {n1, n2, n3, n4}
+where e >= 80 and f >= 80 and g >= 80 and not edge(n2, n4)
+
+mark(a: string)
+[
+    (n1(R), a)
+    |
+]
+=>
+[
+    (n1, a # red)
+    |
+]
+interface = {n1}
+
+removeNodeMark(a : string)
+[
+    (n1, a # red)
+    |
+]
+=>
+[
+    (n1, a)
+    |
+]
+interface = {n1}
+
+removeEdges(a, b: string; c:int)
+[
+    (n1, a)
+    (n2, b)
+    |
+    (e1, n1, n2, c)
+]
+=>
+[
+    (n1, a)
+    (n2, b)
+    |
+]
+interface = {n1, n2}
+
+removeEdgesMark(a, b, c: string)
+[
+    (n1, a)
+    (n2, b)
+    |
+    (e1, n1, n2, c # blue)
+]
+=> 
+[
+    (n1, a)
+    (n2, b)
+    |
+    (e1, n1, n2, c)
+]
+interface = {n1, n2}

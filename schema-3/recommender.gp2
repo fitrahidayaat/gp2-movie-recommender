@@ -1,0 +1,92 @@
+Main = init!; deleteToGenreEdges!; deleteToMovieEdges!; deleteRootToMovieEdges!; removeGreenMarks!
+
+init(a,b,c,d,e:string; f,g:int)
+[
+    (n1, a # green)
+    (n2, b)
+    (n3, c)
+    (n4, d)
+    (n5, e)
+    |
+    (e1, n1, n3, f)
+    (e2, n3, n5, empty)
+    (e3, n2, n4, g)
+    (e4, n4, n5, empty)
+]
+=>
+[
+    (n1, a # green)
+    (n2, b)
+    (n3, c)
+    (n4, d)
+    (n5, e)
+    |
+    (e1, n1, n3, f)
+    (e2, n3, n5, empty)
+    (e3, n2, n4, g)
+    (e4, n4, n5, empty)
+    (e5, n1, n4, a.d # green)
+]
+interface = {n1, n2, n3, n4, n5}
+where f >= 80 and g >= 80 and not edge(n1, n4)
+
+deleteToGenreEdges(a, b: list)
+[
+    (n1, a)
+    (n2, b)
+    |
+    (e1, n1, n2, empty)
+]
+=>
+[
+    (n1, a)
+    (n2, b)
+    |
+]
+interface = {n1, n2}
+
+deleteToMovieEdges(a, b: list; c: int)
+[
+    (n1, a)
+    (n2, b)
+    |
+    (e1, n1, n2, c)
+]
+=>
+[
+    (n1, a)
+    (n2, b)
+    |
+]
+interface = {n1, n2}
+
+deleteRootToMovieEdges(a, b: list; c: int)
+[
+    (n1, a # green)
+    (n2, b)
+    |
+    (e1, n1, n2, c)
+]
+=>
+[
+    (n1, a # green)
+    (n2, b)
+    |
+]
+interface = {n1, n2}
+
+removeGreenMarks(a, b, c:list)
+[
+    (n1, a # green)
+    (n2, b)
+    |
+    (e1, n1, n2, c # green)
+]
+=>
+[
+    (n1, a # green)
+    (n2, b)
+    |
+    (e1, n1, n2, c)
+]
+interface = {n1, n2}
